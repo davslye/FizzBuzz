@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { parse } from 'querystring';
+import { Component } from '@angular/core';
 import { FizzBuzzComponent } from '../fizzBuzz/fizzBuzz.component';
 
 @Component({
