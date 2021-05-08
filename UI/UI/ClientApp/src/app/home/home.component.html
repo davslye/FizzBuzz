@@ -1,0 +1,19 @@
+<h1>FizzBuzz, by David Slye</h1>
+<p>Please enter a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Javascript Array formatted list of values</a> in the input below.</p>
+<ng-form #inputForm>
+  <input #inputArray (ngModel)="unparsedInput" type="text" #unparsedInputTextField (change)="runFizzBuzz(inputArray.value)" placeholder="[1,3,5, ,15, A, 23]" />
+</ng-form>
+<div>
+  <h3>Parsed Input</h3>
+  <p><i>{{parsedInputDisplay}}</i></p>
+</div>
+<div>
+  <h3>Output</h3>
+</div>
+<li class="noBullet code" *ngFor="let outputLine of fizzBuzzOutputDisplay">
+  <div>
+    <li *ngFor="let singleLineOutput of outputLine">
+      <span>{{singleLineOutput}}</span>
+    </li>
+  </div>
+</li>
