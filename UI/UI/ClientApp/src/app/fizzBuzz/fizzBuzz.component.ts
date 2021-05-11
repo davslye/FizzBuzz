@@ -5,12 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './fizzbuzz.component.html'
 })
 export class FizzBuzzComponent {
-  public currentCount = 0;
-
-  public incrementCounter() {
-    this.currentCount++;
-  }
-
   public isDivisibleByFactor(num, factor) {
     return ((num % factor) == 0);
   };
